@@ -1,0 +1,88 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SetOfStacks",
+            "request": "launch",
+            "mainClass": "stack.SetOfStacks",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CustomStack",
+            "request": "launch",
+            "mainClass": "stack.CustomStack",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - stack",
+            "request": "launch",
+            "mainClass": "stack.stack",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayProblems",
+            "request": "launch",
+            "mainClass": "array.ArrayProblems",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayProblem",
+            "request": "launch",
+            "mainClass": "array.ArrayProblem",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringPermutation",
+            "request": "launch",
+            "mainClass": "string.StringPermutation",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - String",
+            "request": "launch",
+            "mainClass": "string.String",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - String",
+            "request": "launch",
+            "mainClass": "strings.String",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LinkedList1",
+            "request": "launch",
+            "mainClass": "list.LinkedList1",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LinkedList",
+            "request": "launch",
+            "mainClass": "list.LinkedList",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LinkedList",
+            "request": "launch",
+            "mainClass": "linkedlist.LinkedList",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BigONotation",
+            "request": "launch",
+            "mainClass": "bigo.BigONotation",
+            "projectName": "CTCI_5f4c551"
+        }
+    ]
+}
