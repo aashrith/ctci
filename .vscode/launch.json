@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CustomQueue",
+            "request": "launch",
+            "mainClass": "list.CustomQueue",
+            "projectName": "CTCI_5f4c551"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SetOfStacks",
             "request": "launch",
             "mainClass": "stack.SetOfStacks",

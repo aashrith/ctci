@@ -6,15 +6,23 @@ class LinkedList {
     Node head;
     static class Node{
         int data;
+        int index;
+        String species;
         Node next;
-        Node(int d){data=d; next=null;}
+        Node(int d, String animals){data=d; species=animals; next=null;}
 
         public void delete() {
             if(next == null){
                 return;
             }
             this.data = next.data;
+            this.species = next.species;
+            this.index = next.index;
             this.next = next.next;
+        }
+
+        public void setIndex(int index){
+            this.index = index;
         }
     }
 
@@ -22,7 +30,7 @@ class LinkedList {
         Node n = head;
         System.out.println("traversing Linked List ");
         while(n!= null){
-            System.out.print(n.data+" ");
+            System.out.println(n.data+" is a "+n.species+"index is "+n.index);
             n=n.next;
         }
     }
@@ -86,29 +94,29 @@ class LinkedList {
 public static void main(String[] argv){
     LinkedList list = new LinkedList();
 
-    list.head = new Node(3);
-    Node second = new Node(1);
-    Node third = new Node(8);
-    Node fourth = new Node(5);
-    Node five = new Node(10);
-    Node six = new Node(2);
-    Node seven = new Node(1);
-    list.head.next = second;
-    second.next = third;
-    third.next= fourth;
-    fourth.next = five;
-    five.next = six;
-    six.next = seven;
+    // list.head = new Node(3);
+    // Node second = new Node(1);
+    // Node third = new Node(8);
+    // Node fourth = new Node(5);
+    // Node five = new Node(10);
+    // Node six = new Node(2);
+    // Node seven = new Node(1);
+    // list.head.next = second;
+    // second.next = third;
+    // third.next= fourth;
+    // fourth.next = five;
+    // five.next = six;
+    // six.next = seven;
     
-    //print LinkedList
-    list.printLinkedList();
+    // //print LinkedList
+    // list.printLinkedList();
     
-    list.partionAt(3);
-    // fourth.delete();
-    // list.findKthElemenet(2);
-    // list.deleteDuplicates();
+    // list.partionAt(3);
+    // // fourth.delete();
+    // // list.findKthElemenet(2);
+    // // list.deleteDuplicates();
 
-    //print LinkedList
-    list.printLinkedList();
+    // //print LinkedList
+    // list.printLinkedList();
 }
 }
