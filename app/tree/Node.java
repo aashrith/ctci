@@ -50,9 +50,26 @@ class Node{
         return 0;
     }
 
+    public static int getHeight(Node node){
+        int leftHeight, rightHeight, absoluteHeight;
+        if(node == null){
+            return 0;
+        }
+        if(node.left == null & node.right == null){
+            return 1;
+        }
+
+         leftHeight = getHeight(node.left);
+         rightHeight = getHeight(node.right);
+        absoluteHeight = Math.abs(leftHeight-rightHeight);
+
+        return absoluteHeight > 1 ? -1 : Math.max(leftHeight, rightHeight)+1;
+
+    }
+
     public static void main(String [] argv) {
         int [] sortedArray = {1,2,3,4,5,6,7};
         Node node = Node.buildTree(sortedArray);
-        System.out.println("Depth="+Node.getDepthStatic(node));
+        System.out.println("Height="+Node.getHeight(node));
     }
 }
